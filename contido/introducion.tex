@@ -1,0 +1,46 @@
+\chapter{Introdución}
+\label{chap:introducion}
+
+\section{Contexto}
+
+\lettrine Cualquier persona de una empresa pierde gran parte de su tiempo para ser capaz de acceder a la información 
+que necesita para llevar su trabajo o en registrar nuevos datos en un sistema de información de una empresa. 
+
+Para solucionar esto tenemos SINVAD, un sistema de compresión de lenguaje natural que es desarrollado por la empresa SREC Solutions. 
+El objetivo es asistir al usuario para consultar información, registrar datos y supervisar información desde cualquier dispositivo con sus propias palabras, 
+en múltiples idiomas y adaptado a los procesos de empresa.
+
+Pero esto tiene una gran limitación, y es que el cliente debe construir sus propias aplicaciones para integrar la API REST de 
+SINVAD para así poder generar informes a partir de los registros de los históricos del cliente.
+
+Por tanto, el objetivo de este proyecto es generar una interfaz interactiva de navegación de históricos asociados que 
+facilite la integración de la API de SINVAD y nos permita gestionar la generación, consulta, interacción, edición en tiempo real, 
+descarga y generación de notificaciones en tiempo real de estos informes que se nombraron anteriormente.
+
+Se busca que esta interfaz sea fácil de utilizar y intuitiva, para que cualquiera persona de cualquiera edad sepa utilizarla, 
+y mediante unas pocas y sencillas acciones, sea capaz de generar informes sobre cualquiera de los datos que tienen el histórico.
+
+\section{Objetivos}
+
+En relación con lo anterior, a continuación se detallarán los objetivos que debería cumplir nuestra interfaz.
+
+Esta interfaz debe estar disponible vía web y cualquier usuario que tenga acceso tiene que ser capaz de utilizarla de forma sencilla.
+Para esto buscaremos que nuestra interfaz sea intuitiva y con esto nos referimos que cualquiera persona, con o sin conocimientos tecnologicos,
+sea capaz mediante una serie sencilla de pasos, sacar los informes que a ellos le interesen.
+
+Dentro de esta interfaz, el usuario podrá hacer los siguientes pasos:
+
+- \textbf{Título del informe:} El usuario, antes de empezar a configurar la información que quiere que aparezca en el informe, necesitará indicar el propósito por el cuál se crea, y
+esto se indicará mediante el título.
+
+- \textbf{Periocidad del informe:} El usuario podrá indicar la periocidad con la que quiere generar el informe, ya que estos, se generarán automáticamente cada x tiempo.
+
+- \textbf{Número de columnas:} El usuario podrá elegir el número de columnas que aparezcan en su informe y el contenido de cada una de ellas. Si alguna de estas, no muestra
+el dato correcto, se podrá editar antes de generar el informe.
+
+- \textbf{Contenido del informe: } Al seleccionar el número de columnas, aparte del título de estas, será necesario el dato a buscar mediante una expresión de lenguaje natural, y 
+esto será lo que el usuario le pasará a nuestro LLM para que lo procese.
+
+Para cumplir todos estos pasos, la interfaz los contendrá de forma sencilla y intuitiva como se mostrará mas adelante en este documento, para facilitar al usuario
+este proceso lo máximo posible.
+
